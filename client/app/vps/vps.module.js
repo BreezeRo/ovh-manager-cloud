@@ -13,6 +13,8 @@ import ovhManagerVpsUpgrade from './upgrade';
 import ovhManagerVpsVeeam from './veeam';
 import ovhManagerVpsWindows from './windows';
 
+import ovhManagerVpsRebuild from './dashboard/rebuild';
+
 const moduleName = 'ovhManagerVps';
 
 angular
@@ -22,6 +24,7 @@ angular
     ovhManagerVpsCloudDatabase,
     ovhManagerVpsDashboard,
     ovhManagerVpsMonitoring,
+    ovhManagerVpsRebuild,
     ovhManagerVpsSecondaryDns,
     ovhManagerVpsSnapshot,
     ovhManagerVpsUpgrade,
