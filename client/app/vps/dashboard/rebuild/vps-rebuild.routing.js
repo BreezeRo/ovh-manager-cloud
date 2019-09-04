@@ -12,9 +12,7 @@ export default /* @ngInject */($stateProvider) => {
     resolve: {
       availableImages: /* @ngInject */ (serviceName, vpsRebuild) => vpsRebuild
         .getAvailableImages(serviceName)
-        .then((availableImages) => {
-          this.availableImages = _.sortBy(availableImages, 'name');
-        }),
+        .then(availableImages => _.sortBy(availableImages, 'name')),
       close: /* @ngInject */ $state => () => $state.go('^'),
       displayError: /* @ngInject */ (
         $translate,
